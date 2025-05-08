@@ -113,9 +113,9 @@ mods\modName\CharaFace_Icon[_4k].png
 --------
 
 EXAMPLE:
-Male Peer Fortress, Palette 2, 4K version in folder `mods\babbysFirstMod\`
+Male Peer Fortress, Palette 2, 4K version named `stimky-mpf2p.png` in folder `mods\babbysFirstMod\`
 ```
-babbysFirstMod stimky-mpf2p -4k
+babbysFirstMod -4k
 ```
 
 After sheet generation, you still must vertically-flip and save as DDS before using puppetWorkbench to convert it to a working .dds.phyre file.
