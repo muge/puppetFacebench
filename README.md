@@ -32,25 +32,15 @@ Script was only (briefly) tested on Windows 7 64-bit, using Python 3.7.0 32/64-b
 In the `\src_temp\` folder, there are PNG versions of the default CharaFace_Icon sheets, and in `templates.zip`, two other PNGs and PSDs.  
 There are three icons: Colored, BW, and a smaller Battlelog Icon.  
 They are arranged into a "chip" so they're easier to organize/modularize (if that's a word?) and share.  
-You don't NEED to use the templates (so you can make your own fancy borders), but puppetFacebench follows this "chip" format, so the dimensions of each icon & chip **MUST** match!  
+You don't NEED to use the images/background in the templates (so you can make your own fancy borders), but puppetFacebench follows this "chip" format, so the dimensions of each icon & chip **MUST** match!  
 
 ### Dimensions:
-|Chip||
-|:-|:-|
-|4K| 112 x 296|
-|HD| 56 x 148|
+||Icon (Color)|Icon (BW)|Battlelog|Chip (Combined)|
+|:-|:-|:-|:-|:-|
+|4K| 112 x 112|112 x 112|112 x 72|112 x 296|
+|HD|56 x 56|56 x 56|56 x 36| 56 x 148|
 
-|Icon (Colored & BW)||
-|:-|:-|
-|4K|112 x 112|
-|HD| 56 x 56|
-
-|Battlelog Icon||
-|:-|:-|
-|4K| 112 x 72|
-|HD| 56 x 36|
-
-If you're sharing your mod, it's recommended you share the chips and not the actual sheet, that way people can choose where they want to slot the character, and saves them some copy-paste job.
+These chips also let you easily share your custom icons without having to give someone the entire sheet.
 
 ### Saving and Naming your Images
 
@@ -76,9 +66,9 @@ Next, you MUST include in your file's name, the intended class/facet and palette
 **1p**, **2p**, **3p**, or **4p**  
 
 So for example:
-- Demon Reaper 3rd Palette: "-dr3p"
-- Male Marginal Maze 1p: "-mmm1p"
-	etc.
+- Demon Reaper 3rd Palette: `-dr3p`
+- Male Marginal Maze 1p: `-mmm1p`
+- etc.
 
 This identifier is required or the chip will be ignored by puppetFacebench.  
 It also can be anywhere in the filename, so `lewdscytheloli-dr3p.png` or `this.-mmm1p.went.on.a.diet.png` will both work.  
@@ -98,8 +88,9 @@ For ease of use, puppetFacebench will also scan subfolders of `mods\[modName]` f
 ### **modName**  
 - Determines location of the chips and the destination of the output file.
 ```
-mods\modName\*.png
-mods\modName\CharaFace_Icon[_4k].png
+i.e.
+mods\[modName]\*.png
+mods\[modName]\CharaFace_Icon_4k.png
 ```
 - Must be specified after the input filename. 
 - Illegal characters will be stripped. 
@@ -118,9 +109,8 @@ Male Peer Fortress, Palette 2, 4K version named `stimky-mpf2p.png` in folder `mo
 ```
 babbysFirstMod -4k
 ```
-
-After sheet generation, you still must vertically-flip and save as DDS before using puppetWorkbench to convert it to a working .dds.phyre file.
-As such, refer to the [puppetWorkbench](https://github.com/muge/puppetWorkbench) README if you're unfamiliar with the process.
+After sheet generation, you still must vertically-flip and save as DDS before using puppetWorkbench to convert it to a working `.dds.phyre` file.
+To do this, refer to the [puppetWorkbench](https://github.com/muge/puppetWorkbench) README if you're unfamiliar with the process.
 
 --------
 ### Changelog
@@ -140,4 +130,3 @@ v0.3 -
 	Added "Working..." progress feedback
 	Rearranged environment so puppetFacebench can co-exist with puppetWorkbench in the same folder for ease of use
 ```
-	
