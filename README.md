@@ -29,7 +29,7 @@ Script was only (briefly) tested on Windows 7 64-bit, using Python 3.7.0 32/64-b
 
 ## III. Prepping Icon Files
 
-In the `\src_temp\` folder, there are PNG versions of the default CharaFace_Icon sheets, along with two other PNGs and PSDs.  
+In the `\src_temp\` folder, there are PNG versions of the default CharaFace_Icon sheets, and in `templates.zip`, two other PNGs and PSDs.  
 There are three icons: Colored, BW, and a smaller Battlelog Icon.  
 They are arranged into a "chip" so they're easier to organize/modularize (if that's a word?) and share.  
 You don't NEED to use the templates (so you can make your own fancy borders), but puppetFacebench follows this "chip" format, so the dimensions of each icon & chip **MUST** match!  
