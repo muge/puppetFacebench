@@ -2,13 +2,14 @@
 _Originally posted to XenTaX.com on 2018/10/20_  
 by mug
 
-## I. About & Disclaimer
-
 Equally janky companion tool for [puppetWorkbench](https://github.com/muge/puppetWorkbench).
 Lets you slap together a CharaFace_Icon sheet with less hassle (maybe).
 
+This script can and should inhabit the same folder as puppetWorkbench for ease of use, but can function independently.
+
+## I. License & Disclaimer
 This work is now licensed under GNU General Public License v3.0, please refer to the included LICENSE file.  
-*This was FORMERLY licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which may be found in various archived (pre-2025) versions of this script around the internet.*
+*<sub>This was FORMERLY licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which may be found in various archived (pre-2025) versions of this script around the internet.</sub>*
 
 **DISCLAIMER**:  
 By using this script you agree that I'm not responsible if you muck up your files (game-related or otherwise) or computer beyond repair.  
